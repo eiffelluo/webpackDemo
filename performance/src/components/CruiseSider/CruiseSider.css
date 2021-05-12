@@ -1,0 +1,53 @@
+
+.sider-container{
+    width: 260px;
+    background-color:#2D4054;
+    padding: 23px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+
+.menu{
+    
+}
+
+.menu-item {
+    height: 45px;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:hover {
+    color: #00B4CF;
+    background-color: #435466;
+}
+
+.menu-item-container {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sider-history{
+    padding: 0 15px;
+}
+
+.history-title{
+    font-size: 24px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.history-item:hover {
+    color: #00B4CF;
+}
+
+.history-item {
+    font-size: 12px;
+    color: #999;
+}
+

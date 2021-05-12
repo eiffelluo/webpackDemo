@@ -1,0 +1,37 @@
+{
+  "name": "webpackDemo",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "happypack": "^5.0.1",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "html-webpack-plugin": "^5.3.1",
+    "speed-measure-webpack-plugin": "^1.5.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-parallel-uglify-plugin": "^2.0.0"
+  },
+  "scripts": {
+    "testDep": "node BaseBuild/src/testDep.js",
+    "testGraph": "node BaseBuild/src/testGraph.js",
+    "testBundle": "node BaseBuild/src/testBundle.js",
+    "baseBuild": "webpack --config BaseBuild/webpack.config.js",
+    "testLoader": "webpack --config TxtLoader/webpack.config.js",
+    "reactBuild": "webpack --config ReactBuild/webpack.config.js",
+    "CodeBeautifyPlugin": "webpack --config CodeBeautifyPlugin/webpack.config.js",
+    "performance": "webpack --config performance/perf.config.js",
+    "noperformance": "webpack --config performance/noperf.config.js",
+    "mock-server": "json-server --watch mock-server/db.json --port 3001"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
